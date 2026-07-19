@@ -1,0 +1,185 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* ===========================
+   Layout
+=========================== */
+
+.tutorial-layout{
+    display:flex;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+    width:270px;
+    background:#0f172a;
+    color:white;
+    padding:25px;
+    position:sticky;
+    top:80px;
+    height:calc(100vh - 80px);
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    margin:20px 0 10px;
+    color:#ffd43b;
+    font-size:22px;
+}
+
+.sidebar a{
+    display:block;
+    color:#ddd;
+    text-decoration:none;
+    padding:10px 0;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    color:#ffd43b;
+    padding-left:10px;
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.content{
+    flex:1;
+    padding:40px;
+}
+
+.content section{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom:35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.content h1,
+.content h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.content p{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+/* ===========================
+   Code Box
+=========================== */
+
+.code-box{
+    background:#1e293b;
+    color:#00ff88;
+    border-radius:10px;
+    padding:20px;
+    margin-top:20px;
+    overflow-x:auto;
+}
+
+.code-box pre{
+    font-family:Consolas, monospace;
+    font-size:15px;
+    white-space:pre-wrap;
+}
+
+/* ===========================
+   Output Box
+=========================== */
+
+.output-box{
+    margin-top:20px;
+    padding:20px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    background:white;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.lesson-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.lesson-buttons a{
+    text-decoration:none;
+    background:#0d6efd;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.lesson-buttons a:hover{
+    background:#084db8;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:10px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.tutorial-layout{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+    position:relative;
+    top:0;
+    height:auto;
+}
+
+.content{
+    padding:20px;
+}
+
+.lesson-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.lesson-buttons a{
+    text-align:center;
+}
+
+}

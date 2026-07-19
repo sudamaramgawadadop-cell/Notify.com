@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xstar | Tutorials</title>
+
+<link rel="stylesheet" href="tutorial.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">X<span>star</span></div>
+
+<nav>
+
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="tutorial.html" class="active">Tutorials</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
+</nav>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</header>
+
+<div class="tutorial-layout">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<h2>HTML Topics</h2>
+
+<a href="#intro">Introduction</a>
+
+<a href="#elements">Elements</a>
+
+<a href="#headings">Headings</a>
+
+<a href="#paragraph">Paragraphs</a>
+
+<a href="#links">Links</a>
+
+<a href="#images">Images</a>
+
+<a href="#lists">Lists</a>
+
+<a href="#tables">Tables</a>
+
+<a href="#forms">Forms</a>
+
+<a href="#semantic">Semantic HTML</a>
+
+<hr>
+
+<h2>CSS Topics</h2>
+
+<a href="#cssintro">CSS Introduction</a>
+
+<a href="#selectors">Selectors</a>
+
+<a href="#colors">Colors</a>
+
+<a href="#background">Background</a>
+
+<a href="#flexbox">Flexbox</a>
+
+<a href="#grid">Grid</a>
+
+<a href="#animation">Animation</a>
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="content">
+
+<section id="intro">
+
+<h1>HTML Introduction</h1>
+
+<p>
+
+HTML (HyperText Markup Language) is the standard language used to create web pages.
+
+</p>
+
+<div class="code-box">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+Hello World
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+</div>
+
+</section>
+
+<section id="elements">
+
+<h2>HTML Elements</h2>
+
+<p>
+
+An HTML element usually consists of an opening tag, content and a closing tag.
+
+</p>
+
+<div class="code-box">
+
+<pre>
+&lt;h1&gt;Heading&lt;/h1&gt;
+
+&lt;p&gt;Paragraph&lt;/p&gt;
+</pre>
+
+</div>
+
+</section>
+
+<section id="headings">
+
+<h2>HTML Headings</h2>
+
+<p>
+
+HTML has six heading tags from h1 to h6.
+
+</p>
+
+<div class="code-box">
+
+<pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+</pre>
+
+</div>
+
+</section>
+
+<section id="paragraph">
+
+<h2>Paragraph</h2>
+
+<p>
+
+Paragraphs are written using the p tag.
+
+</p>
+
+<div class="code-box">
+
+<pre>
+&lt;p&gt;
+This is a paragraph.
+&lt;/p&gt;
+</pre>
+
+</div>
+
+</section>
+
+<section id="links">
+
+<h2>Links</h2>
+
+<p>
+
+Links are created using the anchor tag.
+
+</p>
+
+<div class="code-box">
+
+<pre>
+&lt;a href="https://google.com"&gt;
+Visit Google
+&lt;/a&gt;
+</pre>
+
+</div>
+
+</section>
+
+<section id="images">
+
+<h2>Images</h2>
+
+<div class="code-box">
+
+<pre>
+&lt;img src="image.jpg"
+alt="Example"&gt;
+</pre>
+
+</div>
+
+</section>
+
+<!-- ================= HTML Lists ================= -->
+
+<section id="lists">
+
+<h2>HTML Lists</h2>
+
+<p>Lists are used to group related items.</p>
+
+<h3>Unordered List</h3>
+
+<div class="code-box">
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</div>
+
+<div class="output-box">
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</div>
+
+</section>
+
+<!-- ================= HTML Tables ================= -->
+
+<section id="tables">
+
+<h2>HTML Tables</h2>
+
+<p>Tables are used to display data in rows and columns.</p>
+
+<div class="code-box">
+<pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Rahul&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+</pre>
+</div>
+
+<div class="output-box">
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+
+<tr>
+<td>Rahul</td>
+<td>20</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ================= HTML Forms ================= -->
+
+<section id="forms">
+
+<h2>HTML Forms</h2>
+
+<p>Forms collect user input.</p>
+
+<div class="code-box">
+<pre>
+&lt;form&gt;
+
+&lt;input
+type="text"
+placeholder="Name"&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;input
+type="email"
+placeholder="Email"&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;button&gt;
+Submit
+&lt;/button&gt;
+
+&lt;/form&gt;
+</pre>
+</div>
+
+<div class="output-box">
+
+<form>
+
+<input
+type="text"
+placeholder="Name">
+
+<br><br>
+
+<input
+type="email"
+placeholder="Email">
+
+<br><br>
+
+<button>Submit</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= Semantic HTML ================= -->
+
+<section id="semantic">
+
+<h2>Semantic HTML</h2>
+
+<p>
+Semantic tags describe the meaning of the content.
+</p>
+
+<div class="code-box">
+<pre>
+&lt;header&gt;&lt;/header&gt;
+
+&lt;nav&gt;&lt;/nav&gt;
+
+&lt;main&gt;&lt;/main&gt;
+
+&lt;section&gt;&lt;/section&gt;
+
+&lt;article&gt;&lt;/article&gt;
+
+&lt;footer&gt;&lt;/footer&gt;
+</pre>
+</div>
+
+</section>
+
+<!-- ================= CSS Introduction ================= -->
+
+<section id="cssintro">
+
+<h1>CSS Introduction</h1>
+
+<p>
+CSS stands for Cascading Style Sheets.
+It is used to style HTML pages.
+</p>
+
+<div class="code-box">
+<pre>
+h1{
+color:blue;
+}
+</pre>
+</div>
+
+<div class="output-box">
+<h1 style="color:blue;">Hello Xstar</h1>
+</div>
+
+</section>
+
+<!-- ================= CSS Selectors ================= -->
+
+<section id="selectors">
+
+<h2>CSS Selectors</h2>
+
+<p>
+Selectors target HTML elements.
+</p>
+
+<div class="code-box">
+<pre>
+p{
+color:red;
+}
+</pre>
+</div>
+
+<div class="output-box">
+<p style="color:red;">
+This is a red paragraph.
+</p>
+</div>
+
+</section>
+
+<!-- ================= CSS Colors ================= -->
+
+<section id="colors">
+
+<h2>CSS Colors</h2>
+
+<p>
+You can use names, HEX, RGB and HSL colors.
+</p>
+
+<div class="code-box">
+<pre>
+body{
+background:#f4f4f4;
+}
+
+h1{
+color:#0d6efd;
+}
+</pre>
+</div>
+
+</section>
+
+<!-- ================= CSS Background ================= -->
+
+<section id="background">
+
+<h2>CSS Background</h2>
+
+<div class="code-box">
+<pre>
+body{
+background-color:lightblue;
+}
+</pre>
+</div>
+
+<div class="output-box"
+style="background:lightblue;padding:20px;">
+Background Example
+</div>
+
+</section>
+
+<!-- ================= Flexbox ================= -->
+
+<section id="flexbox">
+
+<h2>CSS Flexbox</h2>
+
+<p>
+Flexbox helps align items easily.
+</p>
+
+<div class="code-box">
+<pre>
+.container{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+}
+</pre>
+</div>
+
+</section>
+
+<!-- ================= Grid ================= -->
+
+<section id="grid">
+
+<h2>CSS Grid</h2>
+
+<div class="code-box">
+<pre>
+.container{
+
+display:grid;
+
+grid-template-columns:
+
+1fr 1fr 1fr;
+
+gap:15px;
+
+}
+</pre>
+</div>
+
+</section>
+
+<!-- ================= Animation ================= -->
+
+<section id="animation">
+
+<h2>CSS Animation</h2>
+
+<div class="code-box">
+<pre>
+.box{
+
+animation:move 2s infinite;
+
+}
+
+@keyframes move{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(100px);
+
+}
+
+}
+</pre>
+</div>
+
+</section>
+
+<!-- ================= Navigation ================= -->
+
+<div class="lesson-buttons">
+
+<a href="courses.html">⬅ Back to Courses</a>
+
+<a href="about.html">Next ➜</a>
+
+</div>
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

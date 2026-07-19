@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Xstar</title>
+
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">X<span>star</span></div>
+
+<nav>
+
+<ul id="menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="tutorial.html">Tutorials</a></li>
+
+<li><a href="about.html" class="active">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</header>
+
+<section class="about-hero">
+
+<h1>About Xstar</h1>
+
+<p>
+Learn HTML & CSS from Beginner to Advanced with simple explanations,
+real examples and practical projects.
+</p>
+
+</section>
+
+<section class="about-section">
+
+<div class="about-card">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h2>Our Mission</h2>
+
+<p>
+Our mission is to make web development easy for everyone. Whether you
+are a beginner or an advanced learner, Xstar helps you learn HTML and
+CSS step by step with practical examples.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h2>Our Vision</h2>
+
+<p>
+We want to build one of the best free learning platforms where students
+can learn web development in a simple and interactive way.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h2>What You'll Learn</h2>
+
+<ul>
+
+<li>HTML Basics</li>
+
+<li>HTML Advanced Concepts</li>
+
+<li>CSS Basics</li>
+
+<li>Flexbox</li>
+
+<li>Grid</li>
+
+<li>Animations</li>
+
+<li>Responsive Design</li>
+
+<li>Mini Projects</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-box">
+
+<h2>50+</h2>
+
+<p>Tutorials</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>100+</h2>
+
+<p>Code Examples</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>10+</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>Free</h2>
+
+<p>Learning</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Website : xstar.netlify.app</p>
+
+</section>
+
+<footer>
+
+<h2>Xstar</h2>
+
+<p>
+Learn HTML & CSS from Basic to Advanced.
+</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+</div>
+
+<p class="copy">
+© 2026 Xstar. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+    // Highlight active page
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Welcome to Xstar About Page!");
+});
+
+// Simple scroll animation
+const cards = document.querySelectorAll(".about-card");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+});
+
+cards.forEach((card) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
+    card.style.transition = "0.6s ease";
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>
